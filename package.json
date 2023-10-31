@@ -1,0 +1,22 @@
+{
+  "name": "renovate-node-lts-docker",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rochet2/renovate-node-lts-docker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rochet2/renovate-node-lts-docker/issues"
+  },
+  "homepage": "https://github.com/Rochet2/renovate-node-lts-docker#readme"
+}
