@@ -3,5 +3,13 @@
   "extends": [
     "config:base",
     "docker:enableMajor"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["node"],
+      "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
+      "versioning": "node"
+    }
   ]
 }
