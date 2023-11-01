@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    "docker:enableMajor"
   ],
   "regexManagers": [
     {
@@ -11,11 +12,10 @@
       "datasourceTemplate": "node",
       "versioningTemplate": "node"
     }
-	],
+  ],
   "packageRules": [
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["node"],
       "versioning": "node"
     }
   ]
