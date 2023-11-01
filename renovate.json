@@ -16,6 +16,7 @@
   "packageRules": [
     {
       "matchDatasources": ["docker"],
+      "matchPackageNames": ["node"],
       "versioning": "node"
     }
   ]
