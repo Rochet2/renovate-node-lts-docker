@@ -3,9 +3,19 @@
   "extends": [
     "config:base"
   ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["FROM node:(?<currentValue>.*?)-slim\\n"],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node",
+      "versioningTemplate": "node"
+    }
+	],
   "packageRules": [
     {
       "matchDatasources": ["docker"],
+      "matchPackageNames": ["node"],
       "versioning": "node"
     }
   ]
