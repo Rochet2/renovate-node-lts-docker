@@ -1,11 +1,11 @@
-FROM node:18.18.2 as build
+FROM node:20.9.0 as build
 
-FROM node:18 as build2
+FROM node:20 as build2
 
 RUN echo foo
 
-FROM node:18-slim
+FROM node:20-slim
 
-FROM node:18-alpine
+FROM node:20-alpine
 
 CMD ["echo", "bar"]
